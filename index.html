@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="layout">
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+  <h2>KAWAI</h2>
+  <ul>
+    <li class="active"><a href="index.html">Dashboard</a></li>
+    <li><a href="produtos.html">Produtos</a></li>
+    <li><a href="vendas.html">Vendas</a></li>
+    <li><a href="#">Configurações</a></li>
+  </ul>
+</aside>
+
+<!-- CONTEÚDO -->
+<div class="content">
+
+
+<header>
+
+    <h1>Dashboard</h1>
+
+    <div class="topbar">
+
+        <div class="notificacao">
+            🔔
+        </div>
+
+        <div class="user">
+            Olá, Admin
+           
+        </div>
+
+    </div>
+
+</header>
+
+<section class="cards">
+  <div class="card pink"><h3>Faturamento</h3><p>¥ 19.700</p></div>
+  <div class="card pink"><h3>Pedidos</h3><p>11</p></div>
+  <div class="card blue"><h3>Produtos</h3><p>24</p></div>
+  <div class="card pink"><h3>Clientes</h3><p>6</p></div>
+</section>
+
+<section class="grafico">
+    <h3>Faturamento nos últimos 30 dias</h3>
+    <canvas id="grafico"></canvas>
+</section>
+
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html> 
+
